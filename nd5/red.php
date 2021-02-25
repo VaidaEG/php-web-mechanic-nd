@@ -9,6 +9,7 @@ puslapį (iš raudono į mėlyną ir atvirkščiai).
 <?php
 if (isset($_GET['link'])) {
     header('location:http://localhost/php-web-mechanic-nd/nd5/blue.php');
+    die;
 }
 ?>
 <!DOCTYPE html>

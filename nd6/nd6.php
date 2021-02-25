@@ -7,12 +7,18 @@ formos ir geltonai- kai iš POST.
 */
 ?>
 <?php
-if (isset($_GET['get'])) {
-    $color = 'green';
-}
-if (isset($_POST['post'])) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $color = 'yellow';
 }
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $color = 'green';
+}
+// if (isset($_GET['get'])) {
+//     $color = 'green';
+// }
+// if (isset($_POST['post'])) {
+//     $color = 'yellow';
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">

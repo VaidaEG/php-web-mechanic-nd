@@ -7,6 +7,7 @@ orange.php. Pademonstruokite veikimą.
 ?>
 <?php
 header('location:http://localhost/php-web-mechanic-nd/nd4/orange.php');
+die;
 ?>
 <!DOCTYPE html>
 <html lang="en">
