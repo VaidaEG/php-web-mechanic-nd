@@ -5,13 +5,19 @@ tuo pačiu adresu (t.y. į patį save) jau GET metodu.
 */
 ?>
 <?php
-if (isset($_GET['get'])) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $color = 'yellow';
+    header('Location: http://localhost/php-web-mechanic-nd/nd7/nd7.php');
+}
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $color = 'green';
 }
-if (isset($_POST['post'])) {
-    $color = 'yellow';
-    header ('Location: http://localhost/php-web-mechanic-nd/nd7/nd7.php');
-}
+// if (isset($_GET['get'])) {
+//     $color = 'green';
+// }
+// if (isset($_POST['post'])) {
+//     $color = 'yellow';
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">

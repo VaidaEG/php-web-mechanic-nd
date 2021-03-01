@@ -9,7 +9,7 @@ puslapį.
 ?>
 <?php
 if (isset($_GET['noredirecting'])) {
-    header ('Location: http://localhost/php-web-mechanic-nd/nd8/rose.php');
+    _d($_GET['noredirecting']);
 } elseif (isset($_GET)) {
     header ('Location: http://localhost/php-web-mechanic-nd/nd8/pink.php');
 }

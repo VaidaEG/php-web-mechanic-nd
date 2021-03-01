@@ -23,7 +23,6 @@ if (isset($_POST['post'])) {
 </head>
 <body style="background-color: pink; display: flex; justify-content: center;">
 <form action="" method="post">
-    <input type="text" name="color">
     <button type="submit" name="post">GO TO ROSE</button>
 </form>
 </body>
